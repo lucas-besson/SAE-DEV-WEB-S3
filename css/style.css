@@ -1,15 +1,20 @@
+/* Restriction sur la taille du logo dans la navbar*/
 .logo {
     max-width: 150px;
     max-height: 40px;
 }
 
+/* Couleur du fond de la navbar*/
 .bg-green {
     background-color: #218283;
 }
 
+/* mise en page à l'interieur de la nav bar afin de mettre tous à gauche le chaps recherhce*/
 .navbar .navbar-collapse form {
     margin-left: auto;
 }
+
+/*Mise en page de l'image d'accueil*/
 
 .custom-image-container {
     width: 100%;
@@ -17,8 +22,50 @@
     height: 1050px;
 }
 
+/* Msie en page dans le blok de l'image d'accueil */
+
 .custom-image {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* Personalisation du style des différente card */
+.card-style {
+    text-align: center;
+    background-color: #D4E3FC;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    transition: transform 0.3s;
+}
+
+/*Fixation de la taille du logo des card*/
+.logo-card {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Ajout d'une ombre + effet lorsque l'on survole une carde */
+
+.card-style:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Style du texte de la card*/
+.card-style p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+/*Suppresion du lien bleu automatique (a href)de la card */
+
+.card-link {
+    text-decoration: none;
 }
