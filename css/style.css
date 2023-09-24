@@ -1,0 +1,24 @@
+.logo {
+    max-width: 150px;
+    max-height: 40px;
+}
+
+.bg-green {
+    background-color: #218283;
+}
+
+.navbar .navbar-collapse form {
+    margin-left: auto;
+}
+
+.custom-image-container {
+    width: 100%;
+    overflow: hidden;
+    height: 1050px;
+}
+
+.custom-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
