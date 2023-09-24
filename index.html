@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+   <head>
       <meta charset="UTF-8">
       <meta name="description" content="Site de la communauté de Morlaix">
       <meta name="author" content="Damien Eloïse Lucas Samy">
@@ -11,6 +11,42 @@
       <link rel="stylesheet" href="css/bootstrap.css">
    </head>
    <body>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light bg-green">
+            <div class="container">
+               <a class="navbar-brand" href="#">
+               <img class="logo" src="image/logo_morlaix-coupe.png" alt="Logo de la caumunauté">
+               <span class="text-white ml-2">Morlaix Communauté</span>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                  <ul class="navbar-nav text-center">
+                     <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">La Communauté</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Domaines d'actions</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Les grands projets</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Les équipements</a>
+                     </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                     <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                     <button class="btn btn-outline-success bg-white text-black" type="submit">OK</button>
+                  </form>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <div class="custom-image-container">
+         <img src="image/fond-page-accueil.jpg" class="custom-image" alt="Image d'accueil">
+      </div>
       <div class="container">
          <div class="row">
             <div class="col-sm-3">
@@ -62,12 +98,10 @@
                </div>
             </div>
             <div class="col-sm-3 bg-light">
-             <div class="row">
-
-                <span class="glyphicon calendar"></span>
-
-              <h2>Agenda</h2>
-              </div>
+               <div class="row">
+                  <span class="glyphicon calendar"></span>
+                  <h2>Agenda</h2>
+               </div>
                <div class="row">
                   <h5>24/09/2023</h5>
                   <p class="border-left-5  border-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
@@ -84,6 +118,5 @@
          </div>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
-    </body>
+   </body>
 </html>
