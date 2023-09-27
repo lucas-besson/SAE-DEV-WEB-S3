@@ -73,3 +73,24 @@
 .space-after{
     margin-bottom: 3%;
 }
+
+/*Damien : Footer*/
+
+/*Fond du background*/
+.footer-container {
+    background-color: lightgray; /* Couleur gris clair */
+    background-image: url("image/logo_morlaix.png");
+    padding: 10px; /* Ajoute de l'espacement autour du contenu du pied de page */
+}
+/*Suppresion du lien bleu automatique + texte en noir */
+.footer-link {
+    text-decoration: none;
+    color: black;
+}
+/*Centrer les réseaux sous le h5 Réseaux*/
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
