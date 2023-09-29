@@ -73,3 +73,21 @@
 .space-after{
     margin-bottom: 3%;
 }
+
+/*Couleur page actuelle*/
+
+.list-group .active{
+    background-color:#218283;
+    border:none;
+}
+
+/*Agenda*/
+#agenda{
+    padding-left:2em;
+    background-color:#eee;
+    border-radius:5px;
+}
+#agenda .info p {
+    border-left:solid #ffa0a0;
+    text-align:justify;
+}
