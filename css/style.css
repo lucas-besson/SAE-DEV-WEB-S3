@@ -19,7 +19,8 @@
 .custom-image-container {
     width: 100%;
     overflow: hidden;
-    height: 1050px;
+    height: 800px;
+    margin-bottom: -7%;
 }
 
 /* Msie en page dans le blok de l'image d'accueil */
@@ -39,7 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 10px;
     transition: transform 0.3s;
 }
 
