@@ -19,8 +19,7 @@
 .custom-image-container {
     width: 100%;
     overflow: hidden;
-    height: 800px;
-    margin-bottom: -7%;
+    height: 1050px;
 }
 
 /* Msie en page dans le blok de l'image d'accueil */
@@ -40,7 +39,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 30px;
     transition: transform 0.3s;
 }
 
@@ -75,20 +74,23 @@
     margin-bottom: 3%;
 }
 
-/*Couleur page actuelle*/
+/*Damien : Footer*/
 
-.list-group .active{
-    background-color:#218283;
-    border:none;
+/*Fond du background*/
+.footer-container {
+    background-color: lightgray; /* Couleur gris clair */
+    background-image: url("image/logo_morlaix.png");
+    padding: 10px; /* Ajoute de l'espacement autour du contenu du pied de page */
+}
+/*Suppresion du lien bleu automatique + texte en noir */
+.footer-link {
+    text-decoration: none;
+    color: black;
+}
+/*Centrer les réseaux sous le h5 Réseaux*/
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*Agenda*/
-#agenda{
-    padding-left:2em;
-    background-color:#eee;
-    border-radius:5px;
-}
-#agenda .info p {
-    border-left:solid #ffa0a0;
-    text-align:justify;
-}
