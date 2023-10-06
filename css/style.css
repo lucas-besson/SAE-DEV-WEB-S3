@@ -1,3 +1,6 @@
+*{
+    box-shadow: 0 0 3px red;
+}
 /* Restriction sur la taille du logo dans la navbar*/
 .logo {
     max-width: 150px;
@@ -220,4 +223,15 @@
 }
 #lirelasuite {
     display:none;
+}
+#imageButton {
+
+    background-color: #218283;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#hiddenImage {
+    display: none; /* L'image est cachée initialement */
 }
