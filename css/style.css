@@ -112,3 +112,6 @@
     border-left: solid #ffa0a0;
     text-align: justify;
 }
+#lirelasuite {
+    display:none;
+}
