@@ -12,7 +12,9 @@
 
 
 }
-
+.leaflet-control-zoom-out{
+    z-index: 40;
+}
 a,
 a:visited,
 a:active {

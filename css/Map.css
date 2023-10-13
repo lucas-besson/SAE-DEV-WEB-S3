@@ -1,0 +1,17 @@
+
+
+.mapdiv{
+    width:28%;
+    margin: auto;
+}
+
+.mapdiv path {
+    fill: #a4aba4;
+    stroke: rgb(255, 255, 255);
+    stroke-width:0.5px;
+
+}
+
+.mapdiv :hover {
+    fill: rgb(33, 130, 131);
+}
