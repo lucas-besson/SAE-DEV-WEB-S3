@@ -11,104 +11,223 @@
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     </head>
 
     <body>
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-green">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img class="logo" src="image/logo_morlaix-coupe.png" alt="Logo de la caumunauté">
-                        <span class="text-white ml-2">Morlaix Communauté</span>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-green">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="image/logo_morlaix-coupe.png" alt="Logo de la caumunauté">
+                    <span class="text-white ml-2">Morlaix Communauté</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">La Communautée</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Domaines d'actions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Les grands projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Les équipements</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                        <button class="btn btn-outline-success bg-white text-black" type="submit">OK</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="custom-image-container">
+        <img src="image/fond-page-accueil.jpg" class="custom-image" alt="Image d'accueil">
+    </div>
+
+    <div class="container mt-4 space-after ">
+        <!-- ne pas oublier de mettre les lien sur les cards ici !!-->
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card-style">
+                    <a href="#" class="card-link">
+                        <img src="image/icones/public-library.png" class="logo-card" alt="Logo Batiment Publique">
+                        <p class="font-weight-bold" >COMMANDE PUBLIQUE</p>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav text-center">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">La Communautée</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Domaines d'actions</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Les grands projets</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Les équipements</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                            <button class="btn btn-outline-success bg-white text-black" type="submit">OK</button>
-                        </form>
-                    </div>
                 </div>
-            </nav>
-        </header>
-
-        <div class="custom-image-container">
-            <img src="image/fond-page-accueil.jpg" class="custom-image" alt="Image d'accueil">
-        </div>
-
-        <div class="container mt-4 space-after ">
-            <!-- ne pas oublier de mettre les lien sur les cards ici !!-->
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="card-style">
-                        <a href="#" class="card-link">
-                            <img src="image/icones/public-library.png" class="logo-card" alt="Logo Batiment Publique">
-                            <p class="font-weight-bold" >COMMANDE PUBLIQUE</p>
-                        </a>
-                    </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card-style">
+                    <a href="#" class="card-link">
+                        <img src="image/icones/valise.png" class="logo-card" alt="Logo  Valise">
+                        <p class="font-weight-bold">EMPLOI</p>
+                    </a>
                 </div>
-                <div class="col-md-2">
-                    <div class="card-style">
-                        <a href="#" class="card-link">
-                            <img src="image/icones/valise.png" class="logo-card" alt="Logo  Valise">
-                            <p class="font-weight-bold">EMPLOI</p>
-                        </a>
-                    </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card-style">
+                    <a href="Service en ligne.html" class="card-link" target="_blank">
+                        <img src="image/icones/association.png" class="logo-card" alt="Logo Associations">
+                        <p class="font-weight-bold">SERVICE EN LIGNE</p>
+                    </a>
                 </div>
-                <div class="col-md-2">
-                    <div class="card-style">
-                        <a href="Service en ligne.html" class="card-link" target="_blank">
-                            <img src="image/icones/association.png" class="logo-card" alt="Logo Associations">
-                            <p class="font-weight-bold">SERVICE EN LIGNE</p>
-                        </a>
-                    </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card-style">
+                    <a href="#" class="card-link">
+                        <img src="image/icones/autobus.png" class="logo-card" alt="Logo Mobilité">
+                        <p class="font-weight-bold">MOBILITÉS ET STATONNEMENTS</p>
+                    </a>
                 </div>
-                <div class="col-md-2">
-                    <div class="card-style">
-                        <a href="#" class="card-link">
-                            <img src="image/icones/autobus.png" class="logo-card" alt="Logo Mobilité">
-                            <p class="font-weight-bold">MOBILITÉS ET STATONNEMENTS</p>
-                        </a>
-                    </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card-style">
+                    <a href="#" class="card-link">
+                        <img src="image/icones/cloture.png" class="logo-card" alt="Logo Travaux">
+                        <p class="font-weight-bold">TRAVAUX</p>
+                    </a>
                 </div>
-                <div class="col-md-2">
-                    <div class="card-style">
-                        <a href="#" class="card-link">
-                            <img src="image/icones/cloture.png" class="logo-card" alt="Logo Travaux">
-                            <p class="font-weight-bold">TRAVAUX</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card-style">
-                        <a href="Ltouristique.html" class="card-link" target="_blank">
-                            <img src="image/icones/Logo_lieux_Touristiques.png" class="logo-card" alt="Logo Sport">
-                            <p class="font-weight-bold">LIEUX TOURISTIQUES</p>
-                        </a>
-                    </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card-style">
+                    <a href="Ltouristique.html" class="card-link" target="_blank">
+                        <img src="image/icones/Logo_lieux_Touristiques.png" class="logo-card" alt="Logo Sport">
+                        <p class="font-weight-bold">LIEUX TOURISTIQUES</p>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
+        <div class="boite">
 
+            <h3 class="title"> Services en ligne </h3>
 
+            <div class="products-boite">
+
+                <div class="product" data-name="p-1">
+                    <img src="https://www.cedre.info/wp-content/uploads/2016/07/triangle-meobius.png" alt="">
+                    <h3>Réduction des déchets et demandes de subvention</h3>
+                </div>
+
+                <div class="product" data-name="p-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Patrimoine_Culturel_Immat%C3%A9riel_logo.svg/2048px-Patrimoine_Culturel_Immat%C3%A9riel_logo.svg.png" alt="">
+                    <h3>Culture et Patrimoine</h3>
+                </div>
+
+                <div class="product" data-name="p-3">
+                    <img src="image/logo-manifestationsportive.png" alt="">
+                    <h3>Manifestations sportives</h3>
+                </div>
+
+                <div class="product" data-name="p-4">
+                    <img src="image/logo_cohesion.png" alt="">
+                    <h3>Cohésion sociale, Jeunesse et Contrat de veille</h3>
+                </div>
+
+                <div class="product" data-name="p-5">
+                    <img src="https://produits-hygiene.fr/img/cms/25032020_2_stickers_autocollant_paiement_cb_carte_bancaire_master-card-visa.jpg" alt="">
+                    <h3>Paiement en ligne</h3>
+                </div>
+
+                <div class="product" data-name="p-6">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5422/5422484.png" alt="">
+                    <h3>Ressources humaines</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="products-preview">
+
+            <div class="preview" data-target="p-1">
+                <i class="fas fa-times"></i>
+                <h3>Réduction des déchets et demandes de subvention</h3>
+                <p>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/7705bdde-811e-4cbb-ac77-61c1e3c0feb0" target="_blank">• Inscription au défi des familles</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/d7bb8a86-a0e8-4fe0-9085-735323725eac" target="_blank">• Subvention pour la prévention des déchets - Composteurs</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/be12e609-3b8b-4797-93f8-88f7cc885896" target="_blank">• Subvention pour la prévention des déchets - Couches lavables</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/659dc8c7-0c9f-4e01-876f-98d52162387d" target="_blank">• Subvention pour la prévention des déchets - Location broyeur</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/75e2fe02-d5cb-4dd3-af8e-9e397f2bd291" target="_blank">• Subvention pour la prévention des déchets - Tondeuse mulching</a><br>
+                </p>
+            </div>
+
+            <div class="preview" data-target="p-2">
+                <i class="fas fa-times"></i>
+                <h3>Culture et Patrimoine</h3>
+                <p>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/1d189235-5b17-4965-be4c-88ab55bf4ba5" target="_blank">• Demande d'information - Culture, Patrimoine</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/subvention-pour-les-associations-culture-patrimoin" target="_blank">• Subvention pour les associations Culture, Patrimoine</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/parcours-culturel-de-l-eleve-demande-de-mise-en-pa" target="_blank">• Parcours culturel de l'élève - Demande de mise en paiement</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/journees-europeennes-du-patrimoine-recensement-des" target="_blank">• Journées Européennes du Patrimoine - Recensement des animations</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/compte-rendu-financier-de-subvention-pour-les-asso" target="_blank">• Compte rendu financier de subvention pour les associations Culture, Patrimoine</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/compte-rendu-pour-les-structures-publiques-culture" target="_blank">• Compte rendu pour les structures publiques Culture, Patrimoine </a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/subvention-pour-les-structures-publiques-culture-e" target="_blank">• Subvention pour les structures publiques Culture, Patrimoine </a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/compte-rendu-petit-patrimoine-non-classe-bati" target="_blank">• Compte rendu « Petit patrimoine non-classé bâti »</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/demande-de-subvention-petit-patrimoine-non-classe-" target="_blank">• Demande de subvention « Petit patrimoine non-classé bâti »</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/demande-de-subvention-soutien-aux-tiers-lieux-d-ac" target="_blank">• Demande de subvention "Soutien aux tiers-lieux d'activités artistiques et culturelles"</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/compte-rendu-soutien-aux-tiers-lieux-d-activites-a" target="_blank">• Compte rendu "Soutien aux tiers-lieux d'activités artistiques et culturelles"</a><br>
+                </p>
+            </div>
+
+            <div class="preview" data-target="p-3">
+                <i class="fas fa-times"></i>
+                <h3>Manifestations sportives</h3>
+                <p>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/demande-d-information-manifestations-sportives" target="_blank">• Demande d'information - Manifestations sportives</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/subvention-pour-les-associations-de-manifestations" target="_blank">• Demande de subventions pour les Manifestations sportives</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/compte-rendu-financier-de-subvention-pour-les-asso" target="_blank">• Compte-rendu financier de subvention pour les manifestations sportives</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/subvention-pour-les-structures-publiques-de-manife" target="_blank">• Subventions pour les structures publiques organisant des manifestations sportives</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/compte-rendu-pour-les-structures-publiques-de-mani" target="_blank">• Compte-rendu pour les structures publiques organisant des manifestations sportives</a><br>
+                </p>
+            </div>
+
+            <div class="preview" data-target="p-4">
+                <i class="fas fa-times"></i>
+                <h3>Cohésion sociale, Jeunesse <br> et Contrat de veille</h3>
+                <p>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/demande-d-information-cohesion-sociale-jeunesse" target="_blank">• Demande d'information - Cohésion sociale et Jeunesse</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/subvention-pour-les-associations-cohesion-sociale-" target="_blank">• Subventions pour les associations Cohésion sociale, Jeunesse, Contrat de veille</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/compte-rendu-financier-de-subvention-cohesion" target="_blank">• Compte-rendu financier de subvention pour les associations Cohésion sociale, Jeunesse, Contrat de veille</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/subvention-pour-les-structures-publiques-cohesion-" target="_blank">• Subventions pour les structures publiques Cohésion sociale, Jeunesse, Contrat de veille</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/compte-rendu-pour-les-structures-publiques-cohesio" target="_blank">• Compte-rendu pour les structures publiques Cohésion sociale, Jeunesse, Contrat de veille</a><br>
+                </p>
+            </div>
+
+            <div class="preview" data-target="p-5">
+                <i class="fas fa-times"></i>
+                <h3>Paiement en ligne</h3>
+                <p>
+                    <a href="https://morlaixcommunaute.taxesejour.fr/" target="_blank">• Paiement en ligne - Taxe de séjour</a><br>
+                    <a href="https://www.payfip.gouv.fr/tpi-zu/accueilportail.web" target="_blank">• Paiement en ligne - Corps-morts</a><br>
+                    <a href="https://idp.chorus-pro.gouv.fr/auth/realms/chorus-pro/protocol/openid-connect/auth?scope=profile%20email%20openid&response_type=code&oauth_provider_id=d24601a41b2b1510a15587b5604bcb29&state=SNCcb8ade145e726a9b2b34313043487c8f&redirect_uri=https://portail.chorus-pro.gouv.fr/navpage.do&client_id=d50afa7e1191e81da1c0a38cb81ae130061c4164" target="_blank">• Dématérialisation des factures à l'aide de Chorus Pro</a><br>
+                </p>
+            </div>
+
+            <div class="preview" data-target="p-6">
+                <i class="fas fa-times"></i>
+                <h3>Ressources humaines</h3>
+                <p>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/acdf1b86-7411-44d5-877a-7d6920a91b9e" target="_blank">• Candidature de recrutement en cours</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/2b0ae01a-79a8-4105-b7d1-6fb1de77d4de" target="_blank">• Candidature spontanée</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/d2370eca-eebf-422e-89a1-151e950198ee" target="_blank">• Demande de stage</a><br>
+                    <a href="https://www.demarches-simplifiees.fr/commencer/e5434d62-5de7-433f-88b4-97e0fec3b99a" target="_blank">• Emploi saisonnier</a><br>
+                </p>
+            </div>
+
+        </div>
 
     </body>
 
