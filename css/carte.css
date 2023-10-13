@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/*Container 3D*/
+.container-3d {
+    /*Referencial for 3d Perspective*/
+    border: 2px solid #218283;
+    border-radius: 10px;
+}
+
+/*Card*/
+
+
+.front,
+.back {
+    text-align: center;
+    backface-visibility: hidden; /*hide backface*/
+    transition: all 0s ease-in-out;
+    transform-style: preserve-3d; /*to allow 3d on images*/
+
+
+}
+
+.front {
+    background-position: left;
+}
+
+.back {
+    background-position: right;
+    transform: rotateY(180deg); /*rotate this face*/
+}
+
+/*Back*/
+.back-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+
+
+    font-family: "Segoe UI","system-ui","Poppins";
+}
+
+a {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*Hover Transition*/
+.container-3d:hover .card {
+    transform: rotateY(180deg); /*rotate card when hover on container*/
+}
+
+.container-3d:hover .front {
+    background-position: right;
+}
+
+.container-3d:hover .back {
+    background-position: left;
+}
+
+.fab:hover {
+    transform: scale(1.2);
+}
+.front-content,
+.back-content {
+    transform: translateZ(1px);
+}
+/*Front*/
+
+.front{
+    position: absolute;
+
+    border-radius: 10px;
+    backface-visibility: hidden; /*hide backface*/
+    transition: all 0s ease-in-out;
+    transform-style: preserve-3d; /*to allow 3d on images*/
+    background-size: 300% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.back {
+    position: absolute;
+    backface-visibility: hidden; /*hide backface*/
+    transition: all 0s ease-in-out;
+    transform-style: preserve-3d; /*to allow 3d on images*/
+    background-size: 300% 100%;
+
+    z-index: auto;
+
+
+
+
+}
+
