@@ -1,5 +1,6 @@
 *{
     box-shadow: 0 0 3px red;
+    font-family: 'Segoe UI Variable', sans-serif;
 }
 /* Restriction sur la taille du logo dans la navbar*/
 .logo {
