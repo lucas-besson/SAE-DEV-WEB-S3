@@ -21,6 +21,21 @@
 
 /*Mise en page de l'image d'accueil*/
 
+/*.custom-image-container {
+    width: 100%;
+    overflow: hidden;
+    height: 800px;
+    margin-bottom: -7%;
+}
+
+
+!* Msie en page dans le blok de l'image d'accueil *!
+
+.custom-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}*/
 .custom-image-container {
     width: 100%;
     overflow: hidden;
@@ -28,13 +43,25 @@
     margin-bottom: -7%;
 }
 
-/* Msie en page dans le blok de l'image d'accueil */
-
 .custom-image {
     width: 100%;
     height: auto;
     display: block;
 }
+/*ecriture sur l'image*/
+.custom-image-container h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #000000;
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+}
+
 
 /* Personalisation du style des différente card */
 .card-style {
@@ -378,4 +405,13 @@
     html{
         font-size: 50%;
     }
+}
+@media screen and (max-width: 450px) {
+    .card-style{
+        margin: 10%;
+        padding: 5px ;
+        grid-auto-columns: calc((100% / 2) - 9px);
+
+    }
+    .
 }
