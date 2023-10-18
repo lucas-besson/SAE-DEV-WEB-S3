@@ -10,7 +10,7 @@
 
 /* Couleur du fond de la navbar*/
 .bg-green {
-    background-color: #218283;
+    background-color: #b41219;
 }
 
 /* mise en page à l'interieur de la nav bar afin de mettre tous à gauche le chaps recherhce*/
@@ -69,7 +69,7 @@
 /* Personalisation du style des différente card */
 .card-style {
     text-align: center;
-    background-color: #D4E3FC;
+    background-color: #3586ff;
     padding: 10px;
     height: 200px;
     display: flex;
@@ -102,7 +102,7 @@
 .card-style p {
     margin-top: 10px;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 /*Suppresion du lien bleu automatique (a href)de la card */
@@ -115,10 +115,11 @@
     margin-bottom: 3%;
 }
 
+/* Bouton pour remonter en Haut de la page*/
 .btnhaut {
     height: 50px;
     width: 50px;
-    background: rgba(253, 253, 253, 0);
+    background: #b41219;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -136,7 +137,7 @@
 
 .Toutfooter {
     display: flex;
-    background: #ffffff;
+    background: white;
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 60vh;
@@ -169,6 +170,7 @@
     list-style: none;
 }
 
+/*Icone social footer*/
 .social-icon__link {
     font-size: 2rem;
     color: #fff;
@@ -176,10 +178,12 @@
     display: inline-block;
     transition: 0.5s;
 }
+
 .social-icon__link:hover {
     transform: translateY(-10px);
 }
 
+/*Texte du footer*/
 .menu__link {
     font-size: 1.2rem;
     color: #fff;
@@ -195,6 +199,7 @@
     opacity: 1;
 }
 
+/*Dernier Texte du footer*/
 .footer p {
     color: #fff;
     margin: 15px 0 10px 0;
@@ -262,7 +267,7 @@
 /*Couleur page actuelle*/
 
 .list-group .active{
-    background-color:#218283;
+    background-color: #b41219;
     border:none;
 }
 
@@ -292,6 +297,7 @@
 }
 
 /* -------------------------------------------------- CAROUSEl ------------------------------------------------*/
+
 /*Page Service en ligne*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 
