@@ -114,6 +114,23 @@
     margin-bottom: 3%;
 }
 
+.btnhaut {
+    height: 50px;
+    width: 50px;
+    background: crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 10000;
+}
+.iconeHaut {
+    width: 15px;
+}
 /*Damien : Footer*/
 
 .Toutfooter {
@@ -346,6 +363,7 @@
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 10000;
 }
 /*Taille de la boite pop up*/
 .products-preview .preview{
@@ -361,6 +379,7 @@
 /*affichage du pop up*/
 .products-preview .preview.active{
     display: inline-block;
+
 }
 
 /* Croix du pop up*/
@@ -447,3 +466,4 @@
     }
 
 }
+
