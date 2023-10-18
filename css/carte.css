@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
+*{
+    font-family: 'Segoe UI', sans-serif;
+    /*box-shadow: 0 0 3px red;*/
+}
 /*Container 3D*/
 .container-3d {
     /*Referencial for 3d Perspective*/

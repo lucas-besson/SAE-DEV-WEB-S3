@@ -1,11 +1,7 @@
-
-/*
 *{
-    box-shadow: 0 0 3px red;
+    font-family: 'Segoe UI', sans-serif;
+    /*box-shadow: 0 0 3px red;*/
 }
-*/
-
-
 
 .cardtst {
     margin: auto;
@@ -23,13 +19,12 @@
 
 }
 
-
-
 @media(min-width: 960px){
     .cardtst {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 .cardt {
     position: relative;
     padding-bottom: 150%;
@@ -51,12 +46,12 @@
 .cardt:hover .cardt-background {
     transform: scale(1.05) translateZ(0);
 
-
 }
 
 .cardtst:hover > .cardt:not(:hover) .cardt-background {
     filter: brightness(0.5) saturate(0) contrast(1.2) blur(0.2px);
 }
+
 .cardt-content {
     padding: 24px;
     position: absolute;

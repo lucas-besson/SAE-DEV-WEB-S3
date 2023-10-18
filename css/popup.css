@@ -1,5 +1,9 @@
-.box {
+*{
+    font-family: 'Segoe UI', sans-serif;
+    /*box-shadow: 0 0 3px red;*/
+}
 
+.box {
     margin: 0 auto;
     background: rgba(255,255,255,0.2);
 

@@ -1,4 +1,7 @@
-
+*{
+    font-family: 'Segoe UI', sans-serif;
+    /*box-shadow: 0 0 3px red;*/
+}
 
 .mapdiv{
     width:28%;
