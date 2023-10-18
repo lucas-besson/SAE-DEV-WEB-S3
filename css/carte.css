@@ -4,7 +4,7 @@
 /*Container 3D*/
 .container-3d {
     /*Referencial for 3d Perspective*/
-    border: 2px solid #218283;
+    border: 0.5px solid #ffffff;
     border-radius: 10px;
 }
 
@@ -90,11 +90,7 @@ a {
     transition: all 0s ease-in-out;
     transform-style: preserve-3d; /*to allow 3d on images*/
     background-size: 300% 100%;
-
     z-index: auto;
-
-
-
 
 }
 

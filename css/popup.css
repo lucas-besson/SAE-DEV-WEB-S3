@@ -50,11 +50,18 @@
     position: relative;
     transition: all 5s ease-in-out;
     z-index: 999;
+
 }
 
 .popup h2 {
     margin-top: 0;
-    color: #333;
+    color: #000000;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+}
+.popup h3 {
+    margin-top: 0;
+    color: #000000;
     font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {

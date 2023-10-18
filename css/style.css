@@ -1,7 +1,7 @@
-*{
+/**{
     box-shadow: 0 0 3px red;
     font-family: 'Segoe UI Variable', sans-serif;
-}
+}*/
 /* Restriction sur la taille du logo dans la navbar*/
 .logo {
     max-width: 150px;
@@ -41,6 +41,7 @@
     overflow: hidden;
     height: 800px;
     margin-bottom: -7%;
+
 }
 
 .custom-image {
@@ -51,7 +52,7 @@
 /*ecriture sur l'image*/
 .custom-image-container h1 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     margin: 0;
     padding: 0;
@@ -60,6 +61,7 @@
     font-size: 90px;
     font-weight: 700;
     text-align: center;
+    font-family: 'Segoe UI Variable', sans-serif;
 }
 
 
@@ -304,7 +306,7 @@
     padding:3rem 2rem;
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    outline: .1rem solid #ccc;
+    outline: .2rem solid rgba(0, 0, 0, 0.66);
     outline-offset: -1.5rem;
     cursor: pointer;
 }
@@ -327,9 +329,11 @@
     padding:0.5rem 0;
     font-size: 2rem;
     color:#444;
+    font-family: 'Segoe UI Variable', sans-serif;
 }
 /*Couleur du titre de la boite*/
 .boite .products-boite .product:hover h3{
+    font-family: 'Segoe UI Variable', sans-serif;
     color:#27ae60;
 }
 /*fond noir du pop up*/
@@ -373,12 +377,14 @@
 }
 /* Titre du pop up*/
 .products-preview .preview h3{
+    font-family: 'Segoe UI Variable', sans-serif;
     color:#444;
     padding:.5rem 0;
     font-size: 2.5rem;
 }
 /* Taille des liens du pop up*/
 .products-preview .preview p{
+    font-family: 'Segoe UI Variable', sans-serif;
     text-align: left;
     line-height: 1.5;
     padding:1rem 0;
@@ -406,12 +412,38 @@
         font-size: 50%;
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     .card-style{
-        margin: 10%;
-        padding: 5px ;
-        grid-auto-columns: calc((100% / 2) - 9px);
+        margin-left: 12%;
+        margin-right: 12%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 5% ;
+
 
     }
-    .
+
+}
+@media screen and (max-width: 576px) {
+    .custom-image-container{
+        width: 100%;
+        overflow: hidden;
+        height: 300px;
+        margin-bottom: -7%;
+
+
+    }
+    .custom-image-container h1 {
+        position: absolute;
+        top: 12%;
+        transform: translateY(-50%);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+
 }

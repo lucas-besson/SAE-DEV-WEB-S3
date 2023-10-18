@@ -39,7 +39,8 @@ a:hover {
 }
 
 .contact {
-    padding: 30px 60px;
+   /* padding: 30px 60px;*/
+    padding: 10px 25px;
     color: white;
 }
 
