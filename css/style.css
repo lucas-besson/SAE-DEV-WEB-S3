@@ -117,7 +117,7 @@
 .btnhaut {
     height: 50px;
     width: 50px;
-    background: crimson;
+    background: rgba(253, 253, 253, 0);
     border-radius: 50%;
     display: flex;
     justify-content: center;
