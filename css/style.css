@@ -284,18 +284,18 @@ body{
 /*Agenda*/
 #agenda{
     padding-left:2em;
-    background-color:#eee;
+    background-color: beige;
     border-radius:5px;
 }
 #agenda .info p {
-    border-left: solid #ffa0a0;
+    border-left: solid #af0606;
     text-align: justify;
 }
 #lirelasuite {
     display:none;
 }
-#imageButton {
 
+#imageButton {
     background-color: #218283;
     color: white;
     border: none;
@@ -323,7 +323,7 @@ body{
 /*Titre de la page*/
 .boite .title{
     font-size: 3.5rem;
-    color:#444;
+    color:#031f73;
     margin-bottom: 3rem;
     text-transform: uppercase;
     text-align: center;
@@ -337,16 +337,16 @@ body{
 /*Rangement de toutes les boites*/
 .boite .products-boite .product{
     text-align: center;
-    padding:3rem 2rem;
+    padding:2rem 2rem;
     background: #fff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    outline: .2rem solid rgba(0, 0, 0, 0.66);
+    box-shadow: 0 .5rem 1rem #af0606;
+    outline: .2rem solid #031f73;
     outline-offset: -1.5rem;
     cursor: pointer;
 }
 /*Bordure de la boîte*/
 .boite .products-boite .product:hover{
-    outline: .2rem solid #218283;
+    outline: .2rem solid #031f73;
     outline-offset: 0;
 }
 
@@ -362,11 +362,11 @@ body{
 .boite .products-boite .product h3{
     padding:0.5rem 0;
     font-size: 2rem;
-    color:#444;
+    color:#af0606;
 }
 /*Couleur du titre de la boite*/
 .boite .products-boite .product:hover h3{
-    color:#27ae60;
+    color:#031f73;
 }
 /*fond noir du pop up*/
 .products-preview{
@@ -383,9 +383,9 @@ body{
 /*Taille de la boite pop up*/
 .products-preview .preview{
     display: none;
-    padding:2rem;
+    padding: 2rem;
     text-align: center;
-    background: #fff;
+    background: #fdf4e3;
     position: relative;
     margin:2rem;
     width: 40rem;
@@ -394,7 +394,6 @@ body{
 /*affichage du pop up*/
 .products-preview .preview.active{
     display: inline-block;
-
 }
 
 /* Croix du pop up*/
@@ -402,7 +401,7 @@ body{
     position: absolute;
     top:1rem; right:1.5rem;
     cursor: pointer;
-    color:#444;
+    color:#031f73;
     font-size: 4rem;
 }
 /*Tourner de la croix*/
@@ -411,7 +410,7 @@ body{
 }
 /* Titre du pop up*/
 .products-preview .preview h3{
-    color:#444;
+    color:#031f73;
     padding:.5rem 0;
     font-size: 2.5rem;
 }
@@ -421,7 +420,6 @@ body{
     line-height: 1.5;
     padding:1rem 0;
     font-size: 1.2rem;
-    color:#777;
 }
 
 @media (max-width:991px){
@@ -432,18 +430,17 @@ body{
 }
 
 @media (max-width:768px){
-
     .products-preview .preview img{
         height: 25rem;
     }
 }
 
 @media (max-width:450px){
-
     html{
         font-size: 50%;
     }
 }
+
 @media screen and (max-width: 550px) {
     .card-style{
         margin-left: 12%;
@@ -451,19 +448,15 @@ body{
         margin-bottom: 5%;
         margin-top: 5%;
         padding: 5% ;
-
-
     }
-
 }
+
 @media screen and (max-width: 576px) {
     .custom-image-container{
         width: 100%;
         overflow: hidden;
         height: 300px;
         margin-bottom: -7%;
-
-
     }
     .custom-image-container h1 {
         position: absolute;
@@ -477,6 +470,5 @@ body{
         font-weight: 700;
         text-align: center;
     }
-
 }
 
