@@ -1,6 +1,10 @@
 *{
     font-family: 'Segoe UI', sans-serif;
+
     /*box-shadow: 0 0 3px red;*/
+}
+body{
+    background-color: #fdf4e3;
 }
 /* Restriction sur la taille du logo dans la navbar*/
 .logo {
@@ -10,7 +14,7 @@
 
 /* Couleur du fond de la navbar*/
 .bg-green {
-    background-color: #b41219;
+    background-color: #af0606;
 }
 
 /* mise en page à l'interieur de la nav bar afin de mettre tous à gauche le chaps recherhce*/
@@ -74,7 +78,7 @@
 /* Personalisation du style des différente card */
 .card-style {
     text-align: center;
-    background-color: #3586ff;
+    background-color: #af0606;
     padding: 10px;
     height: 200px;
     display: flex;
@@ -124,7 +128,7 @@
 .btnhaut {
     height: 50px;
     width: 50px;
-    background: #b41219;
+    background: #af0606;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -142,7 +146,7 @@
 
 .Toutfooter {
     display: flex;
-    background: white;
+    background: #fdf4e3;
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 60vh;
@@ -151,7 +155,7 @@
 .footer {
     position: relative;
     width: 100%;
-    background: #3586ff;
+    background: #031f73;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -272,7 +276,7 @@
 /*Couleur page actuelle*/
 
 .list-group .active{
-    background-color: #b41219;
+    background-color: #031f73;
     border:none;
 }
 
