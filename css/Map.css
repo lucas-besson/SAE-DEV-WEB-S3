@@ -5,7 +5,9 @@
 
 .mapdiv{
     width:28%;
-    margin: auto;
+    /*margin: auto;*/
+    margin-left: 10%;
+
 }
 
 .mapdiv path {
