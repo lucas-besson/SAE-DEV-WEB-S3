@@ -55,7 +55,6 @@
 .cardt-content {
     padding: 24px;
     position: absolute;
-    font-family: arial, sans-serif;
 }
 
 .cardt-content p {
@@ -70,6 +69,7 @@
     font-size: 1.9rem;
     text-shadow: 2px 2px 20px rgb(128, 15, 15);
 }
+
 .ecriture{
     color: rgb(0, 0, 0);
     font-size: 6.2rem;
@@ -80,11 +80,8 @@
     max-width: 1200px;
     width: 100%;
     text-align: center;
-
-
-
-
 }
+
 .iconlocalisation{
     align-items: center;
     color: #2c0b0e;
