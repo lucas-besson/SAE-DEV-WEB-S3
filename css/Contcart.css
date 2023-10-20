@@ -27,8 +27,8 @@ a:hover {
 .wrapper {
     width: 100%;
     max-width: 1000px;
-    background-color: #218283;
-    box-shadow: 0 0 15px rgb(0, 0, 0);
+    background-color: #031f73;
+    box-shadow: 0 0 15px #af0606;
     display: flex;
     align-items: center;
     justify-content: center;

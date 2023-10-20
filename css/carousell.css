@@ -29,9 +29,9 @@
   position: absolute;
   text-align: center;
   line-height: 50px;
-  background: #fff;
+  background: white;
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px white;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
@@ -88,7 +88,7 @@
   scroll-snap-align: start;
   height: 342px;
   list-style: none;
-  background: rgb(33, 130, 131);
+  background: #031f73;
   cursor: pointer;
   padding-bottom: 15px;
   flex-direction: column;
@@ -98,18 +98,18 @@
 }
 
 .carouselauto .card .img {
-  background: rgb(33, 130, 131);
+  background: white;
   height: 148px;
   width: 148px;
   border-radius: 50%;
 }
-
+/*Contours image des élus*/
 .card .img img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid rgb(0, 0, 0);
+  border: 4px solid #af0606;
 }
 
 .carouselauto .card h2 {
@@ -124,7 +124,7 @@
 }
 
 .carouselauto .card span {
-  color: #91888b;
+  color: white;
   font-size: 1.2rem;
   text-align: center;
 }

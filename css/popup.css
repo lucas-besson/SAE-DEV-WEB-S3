@@ -70,10 +70,11 @@
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: black;
 }
+/*Croix pour fermer le pop up*/
 .popup .close:hover {
-    color: rgba(33, 130, 131, 0.78);
+    color: #af0606;
 }
 .popup .content {
     max-height: 30%;

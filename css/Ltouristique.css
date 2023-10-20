@@ -64,20 +64,20 @@
 }
 /*Titre du texte dans les cards*/
 .cardt-content p {
-    color: rgba(255, 255, 255, .6);
+    color: white;
     font-size: .9rem;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 /*Texte dans les cards*/
 .cardt-content h3 {
-    color: rgba(255, 255, 255, .9);
+    color: white;
     font-size: 1.6rem;
-    text-shadow: 2px 2px 20px rgb(128, 15, 15);
+    text-shadow: 2px 2px 20px #af0606;
 }
 /*Gros titres*/
 .ecriture{
-    color: rgb(0, 0, 0);
+    color: #031f73;
     font-size: 3rem;
     margin: auto;
     display: grid;
