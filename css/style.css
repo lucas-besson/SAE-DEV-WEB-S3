@@ -45,6 +45,12 @@
 
 }
 
+.custom-image-container video {
+    max-width: 100%; /* La vidéo ne dépassera pas la largeur de son conteneur */
+    height: auto; /* La hauteur est automatiquement ajustée pour conserver les proportions d'origine */
+    pointer-events: none; /* Désactive toute interaction avec la vidéo */
+}
+
 .custom-image {
     width: 100%;
     height: auto;
