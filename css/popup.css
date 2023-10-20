@@ -6,7 +6,6 @@
 .box {
     margin: 0 auto;
     background: rgba(255,255,255,0.2);
-
     border: 2px solid #fff;
     border-radius: 20px/50px;
     background-clip: padding-box;
@@ -17,8 +16,6 @@
     font-size: 1em;
     padding: 10px;
     color: #fff;
-
-
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -54,19 +51,16 @@
     position: relative;
     transition: all 5s ease-in-out;
     z-index: 999;
-
 }
 
 .popup h2 {
     margin-top: 0;
     color: #000000;
-    font-family: Tahoma, Arial, sans-serif;
     text-align: center;
 }
 .popup h3 {
     margin-top: 0;
     color: #000000;
-    font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
     position: absolute;
