@@ -5,14 +5,11 @@
     box-sizing: border-box;*/
   }
 .cart {
-
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif;
-
-
 }
+
 .leaflet-control-zoom-out{
     z-index: 40;
 }
@@ -35,8 +32,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .contact {
@@ -66,6 +61,4 @@ ion-icon {
 #map {
     height: 400px;
     flex: 1;
-
-
 }
