@@ -5,20 +5,21 @@
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
 }
+
 .tout {
   display: flex;
   padding: 0 35px;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-
-
 }
+
 .wrapperauto {
   max-width: 1100px;
   width: 100%;
   position: relative;
 }
+
 .wrapperauto i {
   top: 50%;
   height: 50px;
@@ -33,17 +34,20 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
-
 }
+
 .wrapperauto i:active{
   transform: translateY(-50%) scale(0.85);
 }
+
 .wrapperauto i:first-child{
   left: -22px;
 }
+
 .wrapperauto i:last-child{
   right: -22px;
 }
+
 .wrapperauto .carouselauto{
   display: grid;
   grid-auto-flow: column;
@@ -55,16 +59,20 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+
 .carouselauto::-webkit-scrollbar {
   display: none;
 }
+
 .carouselauto.no-transition {
   scroll-behavior: auto;
 }
+
 .carouselauto.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
+
 .carouselauto.dragging .card {
   cursor: grab;
   user-select: none;
@@ -96,7 +104,6 @@
   border-radius: 50%;
 }
 
-
 .card .img img {
   width: 140px;
   height: 140px;
@@ -120,15 +127,11 @@
   color: #91888b;
   font-size: 1.2rem;
   text-align: center;
-
-
 }
-
 
 .fa-angle-left{
   z-index: 1
 }
-
 
 @media screen and (max-width: 900px) {
   .wrapperauto .carouselauto {
@@ -141,6 +144,7 @@
     grid-auto-columns: 100%;
   }
 }
+
 svg{
   color: #8B53FF;
 }
