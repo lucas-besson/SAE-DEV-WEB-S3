@@ -13,15 +13,12 @@
 
 /*Card*/
 
-
 .front,
 .back {
     text-align: center;
     backface-visibility: hidden; /*hide backface*/
     transition: all 0s ease-in-out;
     transform-style: preserve-3d; /*to allow 3d on images*/
-
-
 }
 
 .front {
@@ -41,9 +38,6 @@
     justify-content: center;
     align-items: center;
     color: #000000;
-
-
-    font-family: "Segoe UI","system-ui","Poppins";
 }
 
 a {
@@ -68,6 +62,7 @@ a {
 .fab:hover {
     transform: scale(1.2);
 }
+
 .front-content,
 .back-content {
     transform: translateZ(1px);
@@ -76,7 +71,6 @@ a {
 
 .front{
     position: absolute;
-
     border-radius: 10px;
     backface-visibility: hidden; /*hide backface*/
     transition: all 0s ease-in-out;
@@ -85,8 +79,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 .back {
     position: absolute;
     backface-visibility: hidden; /*hide backface*/
@@ -94,6 +88,5 @@ a {
     transform-style: preserve-3d; /*to allow 3d on images*/
     background-size: 300% 100%;
     z-index: auto;
-
 }
 
