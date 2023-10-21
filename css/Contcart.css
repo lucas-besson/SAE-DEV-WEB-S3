@@ -19,11 +19,12 @@ a:active {
     text-decoration: none;
     color: inherit;
 }
-
+/*Lire la suite du texte - page commune*/
 a:hover {
     text-decoration: underline;
+    color: #031f73;
 }
-
+/*formulaire de contact à côté de la carte - page commune*/
 .wrapper {
     width: 100%;
     max-width: 1000px;
@@ -33,31 +34,31 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
-
+/*Titre de formulaire de contact - page commune*/
 .contact {
    /* padding: 30px 60px;*/
     padding: 10px 25px;
     color: white;
 }
-
+/*Titre de formulaire de contact - page commune*/
 h1 {
     margin-bottom: 10px;
 }
-
+/*Texte du formulaire de contact - page commune*/
 .contact-item {
     display: flex;
     align-items: center;
     font-size: 18px;
 }
-
+/*Espacement texte formulaire de contact - page commune*/
 .contact-item:not(:last-child) {
     margin-bottom: 30px;
 }
-
+/*Icone formulaire de contact - page commune*/
 ion-icon {
     margin-right: 15px;
 }
-
+/*Map - page commune*/
 #map {
     height: 400px;
     flex: 1;

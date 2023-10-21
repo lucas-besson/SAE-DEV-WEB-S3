@@ -90,4 +90,8 @@ a {
     background-size: 300% 100%;
     z-index: auto;
 }
+/*couleur de fond du texte - page commune*/
+.accordion-body{
+    background-color: beige;
+}
 
