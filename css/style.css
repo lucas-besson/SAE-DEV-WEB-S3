@@ -56,11 +56,6 @@ body{
     pointer-events: none; /* Désactive toute interaction avec la vidéo */
 }
 
-.custom-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 /*ecriture sur l'image*/
 .custom-image-container h1 {
     position: absolute;
