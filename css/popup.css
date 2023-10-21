@@ -21,7 +21,7 @@
     transition: all 0.3s ease-out;
 }
 .button:hover {
-    background: #000000;
+    background: #af0606;
     border-radius: 20px/50px;
 }
 
@@ -41,27 +41,29 @@
     visibility: visible;
     opacity: 20;
 }
-
+/*Pop up Horaire - page commune*/
 .popup {
-    margin: 70px auto;
+    margin: 250px auto;
     padding: 20px;
-    background: #fff;
+    background: #fdf4e3;
     border-radius: 5px;
-    width: 30%;
+    width: 36%;
     position: relative;
     transition: all 5s ease-in-out;
     z-index: 999;
 }
-
+/*Titre dans le pop up - page commune*/
 .popup h2 {
     margin-top: 0;
-    color: #000000;
+    color: #031f73;
     text-align: center;
 }
+/*Texte dans le pop up - page commune*/
 .popup h3 {
     margin-top: 0;
-    color: #000000;
+    color: #031f73;
 }
+/*Croix pour fermer le pop up*/
 .popup .close {
     position: absolute;
     top: 20px;
@@ -72,7 +74,7 @@
     text-decoration: none;
     color: black;
 }
-/*Croix pour fermer le pop up*/
+/*effet Croix pour fermer le pop up*/
 .popup .close:hover {
     color: #af0606;
 }
