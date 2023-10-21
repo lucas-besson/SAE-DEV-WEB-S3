@@ -4,7 +4,7 @@
 }
 
 .mapdiv{
-    width:28%;
+    width:25%;
     /*margin: auto;*/
     margin-left: 10%;
 
@@ -18,5 +18,9 @@
 }
 
 .mapdiv :hover {
-    fill: rgb(33, 130, 131);
+    fill: rgb(3, 31, 115);
+}
+svg{
+    height: 400px;
+    width: 350px;
 }

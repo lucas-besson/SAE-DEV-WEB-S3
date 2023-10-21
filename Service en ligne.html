@@ -14,6 +14,7 @@
         <script rel="text/javascript" src="js/script.js" defer></script>
         <link rel="text/javascript" href="js/script.js">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script rel="text/javascript" src="js/btn.js" defer></script>
     </head>
 
     <body>
@@ -48,8 +49,10 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                        <button class="btn btn-outline-success bg-white text-black" type="submit">OK</button>
+                        <input class="form-control me-2" type="search" id="search" placeholder="Rechercher"
+                               onchange="ouvrirPage()" aria-label="Search">
+                        <input class="btn btn-outline-success bg-white text-black" type="button" id="button"
+                               onclick="ouvrirPage()" value="Chercher">
                     </form>
                 </div>
             </div>
@@ -57,9 +60,9 @@
     </header>
 
     <div class="custom-image-container">
-        <video width="1600" height="1020" controls autoplay="autoplay" muted="" loop="infinite">
+        <!--<video width="1600" height="1020" controls autoplay="autoplay" muted="" loop="infinite">
             <source src="vidéo/MORLAIX_Bretagne.mp4" type=video/mp4>
-        </video>
+        </video>-->
 
         <h1> <span class="ityped"></span></h1>
         <script type="text/javascript" src="js/app.js"></script>

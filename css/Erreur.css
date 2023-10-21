@@ -1,0 +1,33 @@
+
+.erreur{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #218283;
+}
+.erreur h1 {
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background-color:#0f5132  /*center no-repeat*/;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.erreur a{
+    text-decoration: none;
+    background: #218283;
+    color: #2c0b0e;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+.erreur a:hover{
+    background: #0dcaf0;
+}
+
