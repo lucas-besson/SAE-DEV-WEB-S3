@@ -51,5 +51,6 @@ function ouvrirPage() {
         // Rediriger vers une page par défaut si aucune correspondance n'est trouvée
         window.open("erreur.html");
     }
+
 }
 
