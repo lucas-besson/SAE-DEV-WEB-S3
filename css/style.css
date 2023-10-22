@@ -1,7 +1,7 @@
 *{
     font-family: 'Segoe UI', sans-serif;
 
-    box-shadow: 0 0 3px red;
+    /*box-shadow: 0 0 3px red;*/
 }
 
 body{
@@ -109,6 +109,10 @@ body{
 .card-link {
     text-decoration: none;
     color: #031f73;
+}
+/*Couleur des liens lire la suite - page index*/
+#lireplus1, #lireplus2, #lireplus3{
+    color:#031f73;
 }
 
 .space-after{
@@ -456,4 +460,5 @@ body{
         text-align: center;
     }
 }
+
 
