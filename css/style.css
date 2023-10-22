@@ -21,9 +21,7 @@ body{
 /* mise en page à l'interieur de la nav bar afin de mettre tous à gauche le chaps recherhce*/
 .navbar .navbar-collapse form {
     margin-left: auto;
-
 }
-
 
 /*Mise en page de l'image d'accueil*/
 
@@ -34,7 +32,6 @@ body{
     margin-bottom: -7%;
 }
 
-
 !* Msie en page dans le blok de l'image d'accueil *!
 
 .custom-image {
@@ -42,13 +39,12 @@ body{
     height: auto;
     display: block;
 }*/
+
 .custom-image-container {
     width: 100%;
     overflow: hidden;
     height: 800px;
     margin-bottom: -7%;
-
-
 }
 
 .custom-image-container video {
@@ -71,7 +67,6 @@ body{
     font-weight: 700;
     text-align: center;
 }
-
 
 /* Personalisation du style des différente card */
 .card-style {
@@ -104,24 +99,21 @@ body{
     transform: scale(1.1);
     box-shadow: 0 0 10px #031f73;
 }
-
 /*Style du texte de la card*/
 .card-style p {
     margin-top: 10px;
     font-weight: bold;
     color: white;
 }
-
 /*Suppresion du lien bleu automatique (a href)de la card */
-
 .card-link {
     text-decoration: none;
+    color: #031f73;
 }
 
 .space-after{
     margin-bottom: 3%;
 }
-
 /* Bouton pour remonter en Haut de la page*/
 .btnhaut {
     height: 50px;
@@ -137,19 +129,19 @@ body{
     cursor: pointer;
     z-index: 10000;
 }
+
 .iconeHaut {
     width: 15px;
 }
-/*Damien : Footer*/
-
+/*-------------------------------------------Footer----------------------------------------------*/
 .Toutfooter {
     display: flex;
     background: #fdf4e3;
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 60vh;
-
 }
+
 .footer {
     position: relative;
     width: 100%;
@@ -176,7 +168,6 @@ body{
 .menu__item {
     list-style: none;
 }
-
 /*Icone social footer*/
 .social-icon__link {
     font-size: 2rem;
@@ -189,7 +180,6 @@ body{
 .social-icon__link:hover {
     transform: translateY(-10px);
 }
-
 /*Texte du footer*/
 .menu__link {
     font-size: 1.2rem;
@@ -205,7 +195,6 @@ body{
 .menu__link:hover {
     opacity: 1;
 }
-
 /*Dernier Texte du footer*/
 .footer p {
     color: white;
@@ -272,22 +261,22 @@ body{
 
 
 /*Couleur page actuelle*/
-
 .list-group .active{
     background-color: #031f73;
     border:none;
 }
-
 /*Agenda*/
 #agenda{
     padding-left:2em;
     background-color: beige;
     border-radius:5px;
 }
+
 #agenda .info p {
     border-left: solid #af0606;
     text-align: justify;
 }
+
 #lirelasuite {
     display:none;
 }
