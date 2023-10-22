@@ -24,6 +24,12 @@ a:hover {
     text-decoration: underline;
     color: #ffffff;
 }
+
+.accordion-body a{
+    color: #031f73;
+
+
+}
 /*formulaire de contact à côté de la carte - page commune*/
 .wrapper {
     width: 100%;
