@@ -673,6 +673,7 @@ svg {
 
 .cardt:hover .cardt-background {
     transform: scale(1.05) translateZ(0);
+    box-shadow: 0 0 20px #031f73;
 
 }
 
