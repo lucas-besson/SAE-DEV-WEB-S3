@@ -42,11 +42,12 @@ body {
 }*/
 
 .custom-image-container {
+    position: relative;
     width: 100%;
     overflow: hidden;
     height: 800px;
     margin-bottom: -7%;
-    z-index: -999999999;
+    z-index: -1;
 }
 
 .custom-image-container video {
@@ -54,7 +55,7 @@ body {
     height: auto; /* La hauteur est automatiquement ajustée pour conserver les proportions d'origine */
     width: auto;
     pointer-events: none; /* Désactive toute interaction avec la vidéo */
-    z-index: -999999999;
+
 }
 
 /*ecriture sur l'image*/
@@ -83,6 +84,7 @@ body {
     border-radius: 10px;
     transition: transform 0.3s;
     margin-top: 18px;
+
 
 }
 
@@ -671,6 +673,7 @@ svg {
 
 .cardt:hover .cardt-background {
     transform: scale(1.05) translateZ(0);
+
 }
 
 .cardtst:hover > .cardt:not(:hover) .cardt-background {
