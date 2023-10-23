@@ -1,26 +1,27 @@
+/*
 @import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 *{
     font-family: 'Segoe UI', sans-serif;
-    /*box-shadow: 0 0 3px red;*/
+    !*box-shadow: 0 0 3px red;*!
 }
-/*Container 3D*/
+!*Container 3D*!
 .container-3d {
-    /*Referencial for 3d Perspective*/
+    !*Referencial for 3d Perspective*!
     border: 0.5px solid #ffffff;
     border-radius: 10px;
 }
 
-/*Card*/
+!*Card*!
 
 .front,
 .back {
     text-align: center;
-    backface-visibility: hidden; /*hide backface*/
+    backface-visibility: hidden; !*hide backface*!
     transition: all 0s ease-in-out;
-    transform-style: preserve-3d; /*to allow 3d on images*/
+    transform-style: preserve-3d; !*to allow 3d on images*!
 }
-/*Face avant des cartes - page commune*/
+!*Face avant des cartes - page commune*!
 .front {
     background-position: left;
     color: white;
@@ -28,10 +29,10 @@
 
 .back {
     background-position: right;
-    transform: rotateY(180deg); /*rotate this face*/
+    transform: rotateY(180deg); !*rotate this face*!
 }
 
-/*Texte au dos des cartes - page commune*/
+!*Texte au dos des cartes - page commune*!
 .back-content {
     height: 100%;
     display: flex;
@@ -40,16 +41,16 @@
     align-items: center;
     color: white;
 }
-/*Texte en dessous de Nos contact - page commune*/
+!*Texte en dessous de Nos contact - page commune*!
 a {
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
 
-/*Hover Transition*/
+!*Hover Transition*!
 .container-3d:hover .card {
-    transform: rotateY(180deg); /*rotate card when hover on container*/
+    transform: rotateY(180deg); !*rotate card when hover on container*!
 }
 
 .container-3d:hover .front {
@@ -68,14 +69,14 @@ a {
 .back-content {
     transform: translateZ(1px);
 }
-/*Front*/
+!*Front*!
 
 .front{
     position: absolute;
     border-radius: 10px;
-    backface-visibility: hidden; /*hide backface*/
+    backface-visibility: hidden; !*hide backface*!
     transition: all 0s ease-in-out;
-    transform-style: preserve-3d; /*to allow 3d on images*/
+    transform-style: preserve-3d; !*to allow 3d on images*!
     background-size: 300% 100%;
     display: flex;
     justify-content: center;
@@ -84,14 +85,15 @@ a {
 
 .back {
     position: absolute;
-    backface-visibility: hidden; /*hide backface*/
+    backface-visibility: hidden; !*hide backface*!
     transition: all 0s ease-in-out;
-    transform-style: preserve-3d; /*to allow 3d on images*/
+    transform-style: preserve-3d; !*to allow 3d on images*!
     background-size: 300% 100%;
     z-index: auto;
 }
-/*couleur de fond du texte - page commune*/
+!*couleur de fond du texte - page commune*!
 .accordion-body{
     background-color: beige;
 }
 
+*/

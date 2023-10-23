@@ -9,39 +9,18 @@ btn.addEventListener('click', () => {
     })
 
 })
-/*
-function ouvrirPage() {
-    var a = document.getElementById("search").value;
-
-    if (a === "home" || a === "ch*" || a === "chien") {
-        window.open("index.html");
-    }
-
-    else if (a === "Plougonven") {
-        window.open("commune.html");
-    }
-
-    else if (a === "lieu*") {
-        window.open("Ltouristique.html");
-    }
-    else if (a === "youtube") {
-        window.open("Service en ligne.html");
-    }
-
-
-}*/
 function ouvrirPage() {
     var a = document.getElementById("search").value.toLowerCase().replace(/\s+/g, "");
 
-    if (a === "home" || a === "ch*" || a === "fdds") {
+    if (a === "home" || a.match(/^ch/) || a === "fdds") {
         window.open("index.html");
     }
 
-    else if (a === "plougonven") {
+    else if (a === "plougonven" || a.match(/^ch/)) {
         window.open("commune.html");
     }
 
-    else if (a === "lieu*") {
+    else if ( a.match(/^lieu/)) {
         window.open("Ltouristique.html");
     }
     else if (a === "youtube") {

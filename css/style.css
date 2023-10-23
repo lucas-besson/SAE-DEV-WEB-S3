@@ -1,12 +1,13 @@
-*{
+* {
     font-family: 'Segoe UI', sans-serif;
 
     /*box-shadow: 0 0 3px red;*/
 }
 
-body{
+body {
     background-color: #fdf4e3;
 }
+
 /* Restriction sur la taille du logo dans la navbar*/
 .logo {
     max-width: 150px;
@@ -45,13 +46,15 @@ body{
     overflow: hidden;
     height: 800px;
     margin-bottom: -7%;
+    z-index: -999999999;
 }
 
 .custom-image-container video {
     max-width: 100%; /* La vidéo ne dépassera pas la largeur de son conteneur */
     height: auto; /* La hauteur est automatiquement ajustée pour conserver les proportions d'origine */
+    width: auto;
     pointer-events: none; /* Désactive toute interaction avec la vidéo */
-    z-index: -9999;
+    z-index: -999999999;
 }
 
 /*ecriture sur l'image*/
@@ -79,6 +82,8 @@ body{
     justify-content: center;
     border-radius: 10px;
     transition: transform 0.3s;
+    margin-top: 18px;
+
 }
 
 /*Fixation de la taille du logo des card*/
@@ -88,7 +93,7 @@ body{
     margin: 0 auto;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -99,25 +104,29 @@ body{
     transform: scale(1.1);
     box-shadow: 0 0 10px #031f73;
 }
+
 /*Style du texte de la card*/
 .card-style p {
     margin-top: 10px;
     font-weight: bold;
     color: white;
 }
+
 /*Suppresion du lien bleu automatique (a href)de la card */
 .card-link {
     text-decoration: none;
     color: #031f73;
 }
+
 /*Couleur des liens lire la suite - page index*/
-#lireplus1, #lireplus2, #lireplus3{
-    color:#031f73;
+#lireplus1, #lireplus2, #lireplus3 {
+    color: #031f73;
 }
 
-.space-after{
+.space-after {
     margin-bottom: 3%;
 }
+
 /* Bouton pour remonter en Haut de la page*/
 .btnhaut {
     height: 50px;
@@ -137,6 +146,7 @@ body{
 .iconeHaut {
     width: 15px;
 }
+
 /*-------------------------------------------Footer----------------------------------------------*/
 .Toutfooter {
     display: flex;
@@ -172,6 +182,7 @@ body{
 .menu__item {
     list-style: none;
 }
+
 /*Icone social footer*/
 .social-icon__link {
     font-size: 2rem;
@@ -184,6 +195,7 @@ body{
 .social-icon__link:hover {
     transform: translateY(-10px);
 }
+
 /*Texte du footer*/
 .menu__link {
     font-size: 1.2rem;
@@ -199,6 +211,7 @@ body{
 .menu__link:hover {
     opacity: 1;
 }
+
 /*Dernier Texte du footer*/
 .footer p {
     color: white;
@@ -265,15 +278,16 @@ body{
 
 
 /*Couleur page actuelle*/
-.list-group .active{
+.list-group .active {
     background-color: #031f73;
-    border:none;
+    border: none;
 }
+
 /*Agenda*/
-#agenda{
-    padding-left:2em;
+#agenda {
+    padding-left: 2em;
     background-color: beige;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 #agenda .info p {
@@ -282,7 +296,7 @@ body{
 }
 
 #lirelasuite {
-    display:none;
+    display: none;
 }
 
 #imageButton {
@@ -302,135 +316,158 @@ body{
 
 .boite {
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none;
+    border: none;
     text-decoration: none;
     transition: all .2s linear;
     max-width: 1200px;
-    margin:0 auto;
-    padding:3rem 2rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
 }
+
 /*Titre de la page*/
-.boite .title{
+.boite .title {
     font-size: 3.5rem;
-    color:#031f73;
+    color: #031f73;
     margin-bottom: 3rem;
     text-transform: uppercase;
     text-align: center;
 }
+
 /*Espacement de toutes les boites*/
-.boite .products-boite{
+.boite .products-boite {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:2rem;
+    gap: 2rem;
 }
+
 /*Rangement de toutes les boites*/
-.boite .products-boite .product{
+.boite .products-boite .product {
     text-align: center;
-    padding:2rem 2rem;
+    padding: 2rem 2rem;
     background: #fff;
     box-shadow: 0 .5rem 1rem #af0606;
     outline: .2rem solid #031f73;
     outline-offset: -1.5rem;
     cursor: pointer;
 }
+
 /*Bordure de la boîte*/
-.boite .products-boite .product:hover{
+.boite .products-boite .product:hover {
     outline: .2rem solid #031f73;
     outline-offset: 0;
 }
 
 /*Taille des logos des boites*/
-.boite .products-boite .product img{
+.boite .products-boite .product img {
     height: 10rem;
 }
+
 /*Dezoom du logo de la boite*/
-.boite .products-boite .product:hover img{
+.boite .products-boite .product:hover img {
     transform: scale(.9);
 }
+
 /*Taille titre de la boite*/
-.boite .products-boite .product h3{
-    padding:0.5rem 0;
+.boite .products-boite .product h3 {
+    padding: 0.5rem 0;
     font-size: 2rem;
-    color:#af0606;
+    color: #af0606;
 }
+
 /*Couleur du titre de la boite*/
-.boite .products-boite .product:hover h3{
-    color:#031f73;
+.boite .products-boite .product:hover h3 {
+    color: #031f73;
 }
+
 /*fond noir du pop up*/
-.products-preview{
+.products-preview {
     position: fixed;
-    top:0; left:0;
+    top: 0;
+    left: 0;
     min-height: 100vh;
     width: 100%;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 10000;
 }
+
 /*Taille de la boite pop up*/
-.products-preview .preview{
+.products-preview .preview {
     display: none;
     padding: 2rem;
     text-align: center;
     background: #fdf4e3;
     position: relative;
-    margin:2rem;
+    margin: 2rem;
     width: 40rem;
 
 }
+
 /*affichage du pop up*/
-.products-preview .preview.active{
+.products-preview .preview.active {
     display: inline-block;
 }
 
 /* Croix du pop up*/
-.products-preview .preview .fa-times{
+.products-preview .preview .fa-times {
     position: absolute;
-    top:1rem; right:1.5rem;
+    top: 1rem;
+    right: 1.5rem;
     cursor: pointer;
-    color:#031f73;
+    color: #031f73;
     font-size: 4rem;
 }
+
 /*Tourner de la croix*/
-.products-preview .preview .fa-times:hover{
-    transform: rotate(70deg);
+.products-preview .preview .fa-times:hover {
+    transform: rotate(180deg);
+    transition: transform 2s;
 }
+
 /* Titre du pop up*/
-.products-preview .preview h3{
-    color:#031f73;
-    padding:.5rem 0;
+.products-preview .preview h3 {
+    color: #031f73;
+    padding: .5rem 0;
     font-size: 2.5rem;
 }
+
 /* Taille des liens du pop up*/
-.products-preview .preview p{
+.products-preview .preview p {
     text-align: left;
     line-height: 1.5;
-    padding:1rem 0;
+    padding: 1rem 0;
     font-size: 1.2rem;
+
 }
 
-@media (max-width:991px){
+.products-preview .preview p:hover {
+    color: #c50d3b;
 
-    html{
+}
+
+@media (max-width: 991px) {
+
+    html {
         font-size: 55%;
     }
 }
 
-@media (max-width:768px){
-    .products-preview .preview img{
+@media (max-width: 768px) {
+    .products-preview .preview img {
         height: 25rem;
     }
 }
 
-@media (max-width:450px){
-    html{
+@media (max-width: 450px) {
+    html {
         font-size: 50%;
     }
 }
 
-@media screen and (max-width: 550px) {
+/*@media screen and (max-width: 550px) {
     .card-style{
         margin-left: 12%;
         margin-right: 12%;
@@ -441,15 +478,16 @@ body{
     .card-style p{
 
     }
-}
+}*/
 
 @media screen and (max-width: 576px) {
-    .custom-image-container{
+    .custom-image-container {
         width: 100%;
         overflow: hidden;
         height: 300px;
         margin-bottom: -7%;
     }
+
     .custom-image-container h1 {
         position: absolute;
         top: 12%;
@@ -463,5 +501,210 @@ body{
         text-align: center;
     }
 }
+/*-------------------------------------------Carte ineractive----------------------------------------------*/
+.mapdiv {
+    width: 25%;
+    margin-left: 10%;
 
+}
+
+.mapdiv path {
+    fill: #a4aba4;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 0.5px;
+
+}
+
+.mapdiv :hover {
+    fill: rgb(3, 31, 115);
+}
+
+svg {
+    height: 400px;
+    width: 350px;
+}
+/*-------------------------------------------Popup Horaire ----------------------------------------------*/
+.box {
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.button1 {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.button1:hover {
+    background: #af0606;
+    border-radius: 20px/50px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10000;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 20;
+}
+/*Pop up Horaire - page commune*/
+.popup {
+    margin: 250px auto;
+    padding: 20px;
+    background: #fdf4e3;
+    border-radius: 5px;
+    width: 36%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    z-index: 999;
+}
+/*Titre dans le pop up - page commune*/
+.popup h2 {
+    margin-top: 0;
+    color: #031f73;
+    text-align: center;
+}
+/*Texte dans le pop up - page commune*/
+.popup h3 {
+    margin-top: 0;
+    color: #031f73;
+}
+/*Croix pour fermer le pop up*/
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 20ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+/*effet Croix pour fermer le pop up*/
+.popup .close:hover {
+    color: #af0606;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
+/*-------------------------------------------Page Lieux touristiques----------------------------------------------*/
+.cardtst {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+    /*max-width: 1200px;*/
+    width: 100%;
+}
+
+@media(min-width: 540px){
+    .cardtst {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 960px){
+    .cardtst {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cardt{
+        margin:-50% 5% -50%;
+    }
+    /*Titre du texte dans les cards*/
+    .cardt-content p {
+        font-size: 1.9rem;
+    }
+    /*Texte dans les cards*/
+    .cardt-content h3 {
+        font-size: 2.5rem;
+    }
+}
+
+.cardt {
+    position: relative;
+    padding-bottom: 150%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.cardt-background {
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform-origin: center;
+    transition: .2s;
+}
+
+.cardt:hover .cardt-background {
+    transform: scale(1.05) translateZ(0);
+}
+
+.cardtst:hover > .cardt:not(:hover) .cardt-background {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(0.2px);
+}
+/*Position du Texte dans les cards*/
+.cardt-content {
+    padding: 24px;
+    position: absolute;
+}
+/*Titre du texte dans les cards*/
+.cardt-content p {
+    color: white;
+    font-size: .9rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+/*Texte dans les cards*/
+.cardt-content h3 {
+    color: white;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 20px #af0606;
+}
+/*Gros titres*/
+.ecriture{
+    color: #031f73;
+    font-size: 3rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+/*-------------------------------------------Popup Horaire ----------------------------------------------*/
 
