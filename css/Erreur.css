@@ -23,6 +23,7 @@
 }
 
 .erreur a{
+    margin-top: 50px;
     text-decoration: none;
     background: #031f73;
     color: white;
