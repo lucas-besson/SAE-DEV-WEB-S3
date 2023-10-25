@@ -7,7 +7,7 @@
   <meta name="author" content="Damien Eloïse Lucas Samy">
   <!-- Pour adapter sur téléphone -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Erreur</title><link rel="Icon" href="image/logo_morlaix-coupe.png"/>
+  <title>Page en Construction</title><link rel="Icon" href="image/logo_morlaix-coupe.png"/>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -60,7 +60,7 @@
 </header>
 
 <div class="erreur">
-  <h2>Désoler! La page n'est pas disponible.</h2>
+  <h2>Désoler! La page est actuellement en construction <br> Elle sera terminé dans : </h2>
   <div class="countdown_T">
     <div id="time">
       <div class="circle" style="--clr:#2abdea">
@@ -111,8 +111,8 @@
       let hr_dot = document.querySelector('.hr_dot');
       let min_dot = document.querySelector('.min_dot');
       let sec_dot = document.querySelector('.sec_dot');
-      let endDate = '01/01/2024 00:00:00';
-      //date format i.e., mm/dd/yyyy
+      let endDate = '11/01/2023 00:00:00';
+      //format de la date  mois/jours/année
       let x = setInterval(function () {
 
         let now = new Date(endDate).getTime();
@@ -129,31 +129,31 @@
                 60)) / (1000 * 60));
         let s = Math.floor((distance % (1000 * 60)) / (1000));
 
-        //lets output the result in the elements with id
-        days.innerHTML = d + "<br><span>Days</span>";
-        hours.innerHTML = h + "<br><span>Hours</span>";
+        // Affichons le résultat dans les éléments avec un identifiant
+        days.innerHTML = d + "<br><span>Jours</span>";
+        hours.innerHTML = h + "<br><span>Heures</span>";
         minutes.innerHTML = m + "<br><span>Minutes</span>";
-        seconds.innerHTML = s + "<br><span>Seconds</span>";
+        seconds.innerHTML = s + "<br><span>Secondes</span>";
 
-        //lets animate stroke
+        // Animer le tracé de la ligne
         dd.style.strokeDashoffset = 440 - (440 * d) / 365;
-        //365 days in a year
+        // Il y a 365 jours dans une année
         hh.style.strokeDashoffset = 440 - (440 * h) / 24;
-        //there is 24hours in a day
+        // Il y a 24 heures dans une journée
         mm.style.strokeDashoffset = 440 - (440 * m) / 60;
-        //60 minutes in an hour
+        // Il y a 60 minutes dans une heure
         ss.style.strokeDashoffset = 440 - (440 * s) / 60;
-        //60 seconds in a minute
-        //lets animate circle dots
+        // Il y a 60 secondes dans une minute
+        // Animer les points du cercle
         day_dot.style.transform = `rotateZ(${d * 0.986}deg`;
-        //360deg / 365 days = 0.986
+        // 360deg / 365 jours = 0.986
         hr_dot.style.transform = `rotateZ(${h * 15}deg`;
-        //360deg / 24 hrs = 15
+        // 360deg / 24 heures = 15
         min_dot.style.transform = `rotateZ(${m * 6}deg`;
-        //360deg / 60 minutes = 6
+        // 360deg / 60 minutes = 6
         sec_dot.style.transform = `rotateZ(${s * 6}deg`;
-        //360deg / 60 seconds = 6
-        //write some text if countdown is over
+        // 360deg / 60 secondes = 6
+        // le compte à rebours est terminé
         if (distance < 0) {
           clearInterval(x);
           document.getElementById("time").style.display =
@@ -162,7 +162,6 @@
       })
     </script>
   </div>
-  <h1>404</h1>
   <a href="index.html">Retourner à la page d'Accueil</a>
 </div>
 </body>
