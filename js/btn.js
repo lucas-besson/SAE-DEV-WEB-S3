@@ -12,7 +12,7 @@ btn.addEventListener('click', () => {
 function ouvrirPage() {
     var a = document.getElementById("search").value.toLowerCase().replace(/\s+/g, "");
 
-    if (a === "home" || a.match(/^ch/) || a === "fdds") {
+    if (a === "home" || a.match(/^ch/) || a === "accueil"|| a === "Morlaix") {
         window.open("index.html");
     }
 
