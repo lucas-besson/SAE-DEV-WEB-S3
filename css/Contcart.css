@@ -4,6 +4,13 @@
     margin: 0;
     box-sizing: border-box;*/
   }
+.title {
+    font-size: 3.5rem;
+    color: #031f73;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
 .cart {
     display: flex;
     align-items: center;
