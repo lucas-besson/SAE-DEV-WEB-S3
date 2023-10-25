@@ -111,7 +111,7 @@
       let hr_dot = document.querySelector('.hr_dot');
       let min_dot = document.querySelector('.min_dot');
       let sec_dot = document.querySelector('.sec_dot');
-      let endDate = '11/01/2023 00:00:00';
+      let endDate = '12/24/2023 00:00:00';
       //format de la date  mois/jours/année
       let x = setInterval(function () {
 
@@ -119,7 +119,7 @@
         let countDown = new Date().getTime();
         let distance = now - countDown;
 
-        //time calculation for remaining days,hours, seconds
+        // Calcul du temps restant en jours, heures et secondes
 
         let d = Math.floor(distance / (1000 * 60 * 60 *
                 24));
