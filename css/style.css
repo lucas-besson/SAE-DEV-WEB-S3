@@ -1,7 +1,7 @@
 * {
     font-family: 'Segoe UI', sans-serif;
 
-    /*box-shadow: 0 0 3px red;*/
+   /* box-shadow: 0 0 3px red;*/
 }
 
 body {
@@ -292,7 +292,7 @@ body {
 /*Agenda*/
 #agenda {
     padding-left: 2em;
-    background-color: beige;
+    background-color: #f8d99b;
     border-radius: 5px;
 }
 
@@ -306,7 +306,7 @@ body {
 }
 
 #imageButton {
-    background-color: #218283;
+    background-color: #031f73;
     color: white;
     border: none;
     cursor: pointer;
@@ -479,18 +479,16 @@ body {
     }
 }
 
-/*@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     .card-style{
-        margin-left: 12%;
-        margin-right: 12%;
-        margin-bottom: 5%;
-        margin-top: 5%;
-        padding: 5% ;
+
+        margin: 5% 12% 5%;
+
     }
     .card-style p{
 
     }
-}*/
+}
 
 @media screen and (max-width: 576px) {
     .custom-image-container {
@@ -658,6 +656,17 @@ svg {
     .cardt-content h3 {
         font-size: 2.5rem;
     }
+    .accordion-body{
+        font-size: 2rem;
+    }
+    .accordion-button:not(.collapsed) {
+        font-size: 2rem;
+    }
+    .accordion-button{
+        font-size: 2rem;
+
+    }
+
 }
 
 .cardt {
@@ -722,3 +731,41 @@ svg {
 }
 /*-------------------------------------------Popup Horaire ----------------------------------------------*/
 
+.heading {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+.heading h1 {
+    position: relative;
+    font-size: clamp(0rem, 12vw, 6rem);
+    line-height: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+.heading h1:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0; left: 0;
+    width: 20%;
+    height: 100%;
+    color: #031f73;
+    -webkit-text-stroke: 1px #d9a87e; border-right: 2px solid #d9a87e;
+    overflow: hidden;
+    animation: move 5s alternate ease-in-out infinite;
+}
+
+
+@keyframes move {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+
+}
+.ecriture-petit-titre{
+    font-size: 2.5rem;
+}
