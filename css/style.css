@@ -753,16 +753,18 @@ svg {
     position: relative;
     width: fit-content;
     margin: 0 auto;
+    padding: 2em;
+
 }
-.heading h1 {
+.heading h3 {
     position: relative;
     font-size: clamp(0rem, 12vw, 6rem);
     line-height: 0.9em;
     text-transform: uppercase;
     letter-spacing: -0.01em;
-    color: #ffffff;
+    color: #af0606;
 }
-.heading h1:before {
+.heading h3:before {
     content: attr(data-text);
     position: absolute;
     top: 0; left: 0;
