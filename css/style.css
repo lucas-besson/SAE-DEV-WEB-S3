@@ -149,6 +149,10 @@ body {
     width: 15px;
 }
 
+.accordion-button{
+    color: #ffffff;
+}
+
 /*-------------------------------------------Footer----------------------------------------------*/
 .Toutfooter {
     display: flex;

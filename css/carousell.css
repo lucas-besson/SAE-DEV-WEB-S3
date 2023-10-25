@@ -1,245 +1,252 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .tout {
-  display: flex;
-  padding: 0 35px;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .wrapperauto {
-  max-width: 1100px;
-  width: 100%;
-  position: relative;
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
 }
 
 .wrapperauto i {
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  position: absolute;
-  text-align: center;
-  line-height: 50px;
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px white;
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px white;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
 }
 
-.wrapperauto i:active{
-  transform: translateY(-50%) scale(0.85);
+.wrapperauto i:active {
+    transform: translateY(-50%) scale(0.85);
 }
 
-.wrapperauto i:first-child{
-  left: -22px;
+.wrapperauto i:first-child {
+    left: -22px;
 }
 
-.wrapperauto i:last-child{
-  right: -22px;
+.wrapperauto i:last-child {
+    right: -22px;
 }
 
-.wrapperauto .carouselauto{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
+.wrapperauto .carouselauto {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .carouselauto::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .carouselauto.no-transition {
-  scroll-behavior: auto;
+    scroll-behavior: auto;
 }
 
 .carouselauto.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
 }
 
 .carouselauto.dragging .card {
-  cursor: grab;
-  user-select: none;
+    cursor: grab;
+    user-select: none;
 }
 
 .carouselauto :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.carouselauto  .card {
-  scroll-snap-align: start;
-  height: 342px;
-  list-style: none;
-  background: #031f73;
-  cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-  transform-style: preserve-3d;
+.carouselauto .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #031f73;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    transform-style: preserve-3d;
 }
 
 .carouselauto .card .img {
-  background: white;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%;
+    background: white;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
 }
+
 /*Contours image des élus*/
 .card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #af0606;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #af0606;
 }
 
 .carouselauto .card h2 {
-  font-weight: 500;
-  font-size: 1.5rem;
- /* margin: 30px 15px 5px;*/
-  text-align:left ;
-  margin-top: 25px;
-  margin-left: 25px;
-  margin-right: 5px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    /* margin: 30px 15px 5px;*/
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 5px;
 
 }
 
 .carouselauto .card span {
-  color: white;
-  font-size: 1.2rem;
-  text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-.fa-angle-left{
-  z-index: 1
+.fa-angle-left {
+    z-index: 1
 }
 
 @media screen and (max-width: 900px) {
-  .wrapperauto .carouselauto {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
+    .wrapperauto .carouselauto {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .wrapperauto .carouselauto {
-    grid-auto-columns: 100%;
-  }
+    .wrapperauto .carouselauto {
+        grid-auto-columns: 100%;
+    }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-*{
-  font-family: 'Segoe UI', sans-serif;
-  /*box-shadow: 0 0 3px red;*/
+* {
+    font-family: 'Segoe UI', sans-serif;
+    /*box-shadow: 0 0 3px red;*/
 }
+
 /*Container 3D*/
 .container-3d {
-  /*Referencial for 3d Perspective*/
-  border: 0.5px solid #ffffff;
-  border-radius: 10px;
+    /*Referencial for 3d Perspective*/
+    border: 0.5px solid #ffffff;
+    border-radius: 10px;
 }
 
 /*Card*/
 
 .front,
 .back {
-  text-align: center;
-  backface-visibility: hidden; /*hide backface*/
-  transition: all 0s ease-in-out;
-  transform-style: preserve-3d; /*to allow 3d on images*/
+    text-align: center;
+    backface-visibility: hidden; /*hide backface*/
+    transition: all 0s ease-in-out;
+    transform-style: preserve-3d; /*to allow 3d on images*/
 }
+
 /*Face avant des cartes - page commune*/
 .front {
-  background-position: left;
-  color: white;
+    background-position: left;
+    color: white;
 }
 
 .back {
-  background-position: right;
-  transform: rotateY(180deg); /*rotate this face*/
+    background-position: right;
+    transform: rotateY(180deg); /*rotate this face*/
 }
 
 /*Texte au dos des cartes - page commune*/
 .back-content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+
 /*Texte en dessous de Nos contact - page commune*/
 a {
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /*Hover Transition*/
 .container-3d:hover .card {
-  transform: rotateY(180deg); /*rotate card when hover on container*/
+    transform: rotateY(180deg); /*rotate card when hover on container*/
 }
 
 .container-3d:hover .front {
-  background-position: right;
+    background-position: right;
 }
 
 .container-3d:hover .back {
-  background-position: left;
+    background-position: left;
 }
 
 .fab:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .front-content,
 .back-content {
-  transform: translateZ(1px);
+    transform: translateZ(1px);
 }
+
 /*Front*/
 
-.front{
-  position: absolute;
-  border-radius: 10px;
-  backface-visibility: hidden; /*hide backface*/
-  transition: all 0s ease-in-out;
-  transform-style: preserve-3d; /*to allow 3d on images*/
-  background-size: 300% 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.front {
+    position: absolute;
+    border-radius: 10px;
+    backface-visibility: hidden; /*hide backface*/
+    transition: all 0s ease-in-out;
+    transform-style: preserve-3d; /*to allow 3d on images*/
+    background-size: 300% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .back {
-  position: absolute;
-  backface-visibility: hidden; /*hide backface*/
-  transition: all 0s ease-in-out;
-  transform-style: preserve-3d; /*to allow 3d on images*/
-  background-size: 300% 100%;
-  z-index: auto;
+    position: absolute;
+    backface-visibility: hidden; /*hide backface*/
+    transition: all 0s ease-in-out;
+    transform-style: preserve-3d; /*to allow 3d on images*/
+    background-size: 300% 100%;
+    z-index: auto;
 }
+
 /*couleur de fond du texte - page commune*/
-.accordion-body{
-  background-color: beige;
+.accordion-body {
+    background-color: beige;
 }
 
 
