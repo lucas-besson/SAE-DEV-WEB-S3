@@ -27,15 +27,21 @@ a:active {
     color: inherit;
 }
 /*Lire la suite du texte - page commune*/
-a:hover {
+.accordion-body a:hover {
     text-decoration: underline;
-    color: #ffffff;
+    color: #031f73;
 }
 
 .accordion-body a{
     color: #031f73;
 
 
+}
+/*Texte en dessous de Nos contact - page commune*/
+.cart a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
 /*formulaire de contact à côté de la carte - page commune*/
 .wrapper {
@@ -76,3 +82,12 @@ ion-icon {
     height: 400px;
     flex: 1;
 }
+.menu a{
+    color: white;
+
+}
+.menu a:hover{
+    color: white;
+
+}
+
