@@ -15,3 +15,8 @@ var Stadia_OSMBright = L.tileLayer(
 Stadia_OSMBright.addTo(map);
 
 var marker = L.marker([ 48.520721, -3.712390]).addTo(map);
+marker.bindPopup("<b>Plougonven</b>");
+marker.on('click', function() {
+    marker.openPopup();
+
+});
