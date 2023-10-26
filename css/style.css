@@ -485,7 +485,7 @@ body {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
     .card-style{
 
         margin: 5% 12% 5%;
@@ -494,8 +494,8 @@ body {
     .card-style p{
 
     }
-   /* #agenda {
-        !*padding-left: 2em;*!
+    #agenda {
+        /*padding-left: 2em;*/
         background-color: #f8d99b;
         border-radius: 5px;
         padding: 2rem;
@@ -505,7 +505,7 @@ body {
         border-left: solid #af0606;
         text-align: justify;
         font-size: 2rem;
-    }*/
+    }
     .accordion-body{
         font-size: 2rem;
     }
@@ -774,15 +774,17 @@ svg {
     color: #af0606;
 }
 .heading h3:before {
+    /*content: attr(data-text);*/
     content: attr(data-text);
     position: absolute;
     top: 0; left: 0;
-    width: 20%;
+    width: 0%;
     height: 100%;
     color: #031f73;
-    -webkit-text-stroke: 1px #000000; border-right: 2px solid #af0606;
+    -webkit-text-stroke: 1px #000000;
+    border-right: 2px solid #af0606;
     overflow: hidden;
-    animation: move 5s alternate ease-in-out infinite;
+    animation: move 4s alternate ease-in-out ;
 }
 
 
@@ -801,6 +803,8 @@ svg {
 
 /*-----------------------------------Caroucelle elus------------------------------------*/
 .tout {
+    margin: 0;
+    padding: 0;
     display: flex;
     padding: 0 35px;
     align-items: center;
