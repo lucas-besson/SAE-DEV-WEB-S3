@@ -488,17 +488,24 @@ body {
 @media screen and (max-width: 576px) {
     .card-style{
 
-        margin: 5% 12% 5%;
+        margin: 4% 12% 4%;
 
     }
-    .card-style p{
 
-    }
     #agenda {
         /*padding-left: 2em;*/
         background-color: #f8d99b;
         border-radius: 5px;
         padding: 2rem;
+    }
+    #agenda h2{
+    font-size: 3rem;
+    }
+    #agenda h5{
+        font-size: 2rem;
+    }
+    #agenda a{
+        font-size: 2rem;
     }
 
     #agenda .info p {
@@ -514,6 +521,18 @@ body {
     }
     .accordion-button{
         font-size: 2rem;
+
+    }
+    .list-group a{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .list-group{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .card-style p{
+        font-size: 1.6rem;
 
     }
 }
@@ -537,6 +556,39 @@ body {
         font-size: 30px;
         font-weight: 700;
         text-align: center;
+    }
+
+}
+@media screen and (min-width: 576px) and (max-width: 650px) {
+    .custom-image-container {
+        width: 100%;
+        overflow: hidden;
+        height: 410px;
+        margin-bottom: -7%;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 750px) {
+    .custom-image-container {
+        width: 100%;
+        overflow: hidden;
+        height: 500px;
+        margin-bottom: -7%;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 950px) {
+    .custom-image-container {
+        width: 100%;
+        overflow: hidden;
+        height: 550px;
+        margin-bottom: -7%;
+    }
+}
+@media screen and (min-width: 950px) and (max-width: 1180px) {
+    .custom-image-container {
+        width: 100%;
+        overflow: hidden;
+        height: 620px;
+        margin-bottom: -7%;
     }
 }
 /*-------------------------------------------Carte ineractive----------------------------------------------*/
